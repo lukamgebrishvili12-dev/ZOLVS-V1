@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(zolvs_native)
+add_library(zolvs_native SHARED native.cpp)
+find_library(log-lib log)
+target_link_libraries(zolvs_native ${log-lib})
